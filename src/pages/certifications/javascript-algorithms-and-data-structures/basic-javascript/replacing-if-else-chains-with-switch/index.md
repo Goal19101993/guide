@@ -3,8 +3,32 @@ title: Replacing If Else Chains with Switch
 ---
 ## Replacing If Else Chains with Switch
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/javascript-algorithms-and-data-structures/basic-javascript/replacing-if-else-chains-with-switch/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+function chainToSwitch(val) { 
+  var answer = "";
+  // Only change code below this line
+  switch (val) {
+    case "bob":
+      return "Marley";
+      break;
+    case 42:
+      return "The Answer";
+      break;
+    case 1:
+      return "There is no #1";
+      break;
+    case 99:
+      return "Missed me by this much!";
+      break;
+    case 7:
+      return "Ate Nine";
+      break;
+    case "John":
+    case 156:
+      return "";
+  }
+  // Only change code above this line  
+  return answer;  
+}
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
-
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+// Change this value to test
+chainToSwitch(156);
